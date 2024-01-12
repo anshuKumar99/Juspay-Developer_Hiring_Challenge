@@ -19,13 +19,13 @@ MemberldN = Nn
 
 Total Possible Edges = E
 
-<Follower 1> <Following 1> <Time_taken_to_send_the_message> = p1,q1,t1
+<Follower_1> <Following_1> <Time_taken_to_send_the_message> = p1,q1,t1
 
-<Follower 2> <Following 2> <Time_taken_to_send_the_message> = p2,q2,t2
+<Follower_2> <Following_2> <Time_taken_to_send_the_message> = p2,q2,t2
 
-<Follower 3> <Following 3> <Time_taken_to_send_the_message> = p3,q3,t3
+<Follower_3> <Following_3> <Time_taken_to_send_the_message> = p3,q3,t3
 
-<Follower N> <Following N> <Time_taken_to_send_the_message> = pn,qn,tn
+<Follower_N> <Following_N> <Time_taken_to_send_the_message> = pn,qn,tn
 
 Follower (Ninja A) = A
 
