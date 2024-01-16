@@ -65,6 +65,71 @@ Sample Output
 
 5
 
+</br>
+
+Question 2: Find Reachability
+
+JS newbie A wants to check if he can reach out to a React expert B using his network.
+
+INPUT FORMAT
+
+Total members in React Developer Community
+
+memberId1
+
+MemberId2
+
+....
+
+MemberIdN
+
+Total number of connections 
+
+<follower_1> <following_1>
+
+<follower_2> <following_2>
+
+....
+
+<follower_N> <following_N> 
+
+Sender
+
+Recipient
+
+OUTPUT FORMAT
+
+"0" OR "1"
+
+Sample Input
+
+4 
+
+2 
+
+5 
+
+7
+
+9
+
+4
+
+2 9
+
+7 2
+
+7 9
+
+9 5
+
+7
+
+9
+
+Sample Output
+
+1
 
 
 <h3>Some Imgaes for reference</h3>
