@@ -1,3 +1,5 @@
+//Approach 1
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -53,3 +55,70 @@ int main() {
 
     return 0;
 }
+
+//Approach 2
+
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <climits>
+
+using namespace std;
+
+struct Edge {
+    int to;
+    int time;
+};
+
+void addEdge(vector<Edge> graph[], int u, int v, int time) {
+    graph[u].push_back({v, time});
+}
+
+vector<int> dijkstra(vector<Edge> graph[], int N, int start) {
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+    vector<int> dist(N, INT_MAX);
+
+    pq.push({0, start});
+    dist[start] = 0;
+
+    while (!pq.empty()) {
+        int u = pq.top().second;
+        pq.pop();
+
+        for (auto& edge : graph[u]) {
+            int v = edge.to;
+            int time = edge.time;
+
+            if (dist[v] > dist[u] + time) {
+                dist[v] = dist[u] + time;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+
+    return dist;
+}
+
+int main() {
+    int N, E;
+    cin >> N >> E;
+
+    vector<Edge> graph[N];
+
+    for (int i = 0; i < E; i++) {
+        int u, v, time;
+        cin >> u >> v >> time;
+        addEdge(graph, u, v, time);
+    }
+
+    int start; // ID of 'A'
+    cin >> start;
+
+    vector<int> shortestTimes = dijkstra(graph, N, start);
+
+    // Output or process the shortest times as needed
+    // For example, to find the shortest time to 'B', access shortestTimes[B's ID]
+
+    return 0;
+}
+
