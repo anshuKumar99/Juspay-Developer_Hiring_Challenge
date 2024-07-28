@@ -1,6 +1,6 @@
-<h1>Juspay Developer Hiring Challenge solutions in cpp</h1>
+# Juspay Developer Hiring Challenge solutions in cpp<
 
-<h4>Question 1: Learn JS</h4>
+## Question 1: Learn JS</h4>
 
 JS newbie "A" wants to learn React from "B" and wants to know in his
 network who can introduce him to B in the shortest time period.
@@ -67,7 +67,7 @@ Sample Output
 
 </br>
 
-<h4>Question 2: Find Reachability</h4>
+## Question 2: Find Reachability
 
 JS newbie A wants to check if he can reach out to a React expert B using his network.
 
